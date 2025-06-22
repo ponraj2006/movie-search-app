@@ -2,10 +2,9 @@
 const input = document.getElementById('Input');
 const btn = document.getElementById('button');
 const result_container = document.getElementById('movie-results');
-const error_box = document.getElementById('error-message')
 
 // OMDB API key
-const API_KEY = '';//Add Your ApiKey 
+const API_KEY = 'f5c9727e';//Add Your ApiKey 
 
 // Add EventListener
 btn.addEventListener("click", ()=>{
@@ -17,6 +16,7 @@ input.addEventListener("keydown", (event) => {
     valid_input();
   }
 });
+
 
 // Function to validate the input
  const valid_input =() =>{
@@ -33,6 +33,8 @@ input.addEventListener("keydown", (event) => {
 
   async function fetchData(userinput){
  console.log('Fetching Movie:', userinput);
+  // Show loader and clear previous results
+  document.getElementById('loader').style.display = 'inline-grid';
  
  try {
     const response = await fetch(`https://www.omdbapi.com/?apikey=f5c9727e&s=${encodeURIComponent(userinput)}`);
@@ -45,7 +47,7 @@ input.addEventListener("keydown", (event) => {
 
         // If movie not found
     if (data.Response === "False") {
-        error_box.style.display="block"
+       alert('Movie not found. Please try another search.')
     }
     else{
       // Loop through top 10 search results
@@ -66,8 +68,11 @@ input.addEventListener("keydown", (event) => {
   } catch (error) {
     console.error('Fetch error:', error);
      result_container.innerHTML = "";
-    error_box.style.display = "block";
-    error_box.textContent = "Something went wrong. Try again later."; // custom error message
+    
+  }
+   finally {
+    // Always hide loader
+    document.getElementById('loader').style.display = 'none';
   }
 
 }
