@@ -4,7 +4,7 @@ const btn = document.getElementById('button');
 const result_container = document.getElementById('movie-results');
 
 // OMDB API key
-const API_KEY = 'f5c9727e';//Add Your ApiKey 
+const API_KEY = '';//Add Your ApiKey 
 
 // Add EventListener
 btn.addEventListener("click", ()=>{
