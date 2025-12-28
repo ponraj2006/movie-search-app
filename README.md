@@ -73,4 +73,4 @@ This project uses the **OMDb (Open Movie Database) API**.
 const API_KEY = "YOUR_API_KEY_HERE";
 
 ---
-⭐ If you find this project useful, please consider giving it a **star** on GitHub!
+⭐ If you find this project useful, please consider giving it a *star* on GitHub!
