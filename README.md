@@ -59,20 +59,6 @@ This is a simple, responsive Movie Search web application built using **HTML**, 
 
 ---
 
-## 📂 Project Structure
-
-Movie-Finder/
-│
-├── index.html
-├── style.css
-├── script.js
-├── cinema-clapboard.webp
-└── screenshots/
-├── search-page.png
-├── results-page.png
-└── mobile-view.png
-
----
 ## 🔑 API Configuration
 
 This project uses the **OMDb (Open Movie Database) API**.
@@ -85,3 +71,6 @@ This project uses the **OMDb (Open Movie Database) API**.
 2. Add your API key in `script.js`:
 ```js
 const API_KEY = "YOUR_API_KEY_HERE";
+
+---
+⭐ If you find this project useful, please consider giving it a **star** on GitHub!
