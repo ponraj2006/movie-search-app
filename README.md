@@ -17,17 +17,36 @@ This is a simple, responsive Movie Search web application built using **HTML**, 
 
 ## 🌐 Live Demo
 
-[👉 View it on GitHub Pages](https://your-username.github.io/movie-search-app/)  
+🚀 **Live Application:**  
+👉 https://get-movie-search.netlify.app/  
 
+📂 **GitHub Repository:**  
+👉 https://github.com/ponraj2006/movie-search-app/
 
 ---
 
-## 🛠️ Tech Stack
+## 📸 Screenshots
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- [OMDb API](https://www.omdbapi.com/)
+### 🔍 Movie Search Page
+![Movie Search](./screenshots/search-page.png)
+
+### 🎬 Search Results
+![Movie Results](./screenshots/results-page.png)
+
+### 📱 Mobile View
+![Mobile View](./screenshots/mobile-view.png)
+
+---
+
+## 🛠️ Tech Stack & Skills Used (ATS Keywords)
+
+- **HTML5** – Semantic markup
+- **CSS3** – Flexbox, Media Queries, Responsive Design
+- **JavaScript (ES6)** – DOM manipulation, async/await, event handling
+- **REST API Integration**
+- **Frontend Development**
+- **UI/UX Fundamentals**
+- **Git & GitHub**
 
 ---
 
@@ -40,10 +59,29 @@ This is a simple, responsive Movie Search web application built using **HTML**, 
 
 ---
 
-## 🚀 Getting Started
+## 📂 Project Structure
 
-### Clone the repository
+Movie-Finder/
+│
+├── index.html
+├── style.css
+├── script.js
+├── cinema-clapboard.webp
+└── screenshots/
+├── search-page.png
+├── results-page.png
+└── mobile-view.png
 
-```bash
-git clone https://github.com/your-username/movie-search-app.git
-cd movie-search-app
+---
+## 🔑 API Configuration
+
+This project uses the **OMDb (Open Movie Database) API**.
+
+### Steps to configure:
+
+1. Get a free API key from  
+   👉 https://www.omdbapi.com/
+
+2. Add your API key in `script.js`:
+```js
+const API_KEY = "YOUR_API_KEY_HERE";
